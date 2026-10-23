@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title><style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f4ff;
+        color: #222;
+    }
+
+    nav {
+        background: #202b50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav h2 {
+        font-size: 26px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        color: #304ffe;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #304ffe;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background: #172bb8;
+    }
+
+    footer {
+        background: #202b50;
+        color: white;
+        text-align: center;
+        padding: 18px;
+    }
+</style>
+
+</head><body><nav>
+    <h2>My First Website</h2>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to My Website!</h1>
+
+    <p>
+        Hello everyone! 👋
+        This is my first website created using HTML and CSS.
+        I am learning web development and GitHub.
+    </p>
+
+    <a href="https://github.com/" class="btn">
+        Explore GitHub
+    </a>
+
+    <button class="btn" onclick="showMessage()">
+        Click Me!
+    </button>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 My First Website | Created by Me</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").textContent =
+            "Congratulations! Your website is working! 🎉";
+    }
+</script>
+
+</body>
+</html>
